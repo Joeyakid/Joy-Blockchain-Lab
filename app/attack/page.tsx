@@ -346,8 +346,8 @@ export default function AttackSimulation() {
                   </p>
                   <div className="text-xs bg-red-50 p-3 rounded border-l-4 border-red-500">
                     <p className="font-bold text-red-800 mb-1">Why It Fails Here:</p>
-                    <p className="text-gray-700">
-                      Our simulator is single-user, but in a real network with thousands of miners, 51% power is extremely expensive to obtain.
+                    <p className="text-gray-600">
+                      {"Learn about blockchain security by attempting attacks and seeing how the chain breaks"}
                     </p>
                   </div>
                 </div>

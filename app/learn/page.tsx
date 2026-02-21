@@ -15,7 +15,7 @@ const lessons: Lesson[] = [
     title: 'Blockchain Basics',
     summary: 'What a block is, chain linking, and immutability.',
     content: `
-      <p>The blockchain is an append-only chain of blocks. Each block contains a set of transactions, a timestamp, a nonce, and a hash. Blocks are linked together using the previous block's hash so that tampering with an older block invalidates later blocks.</p>
+      <p>The blockchain is an append-only chain of blocks. Each block contains a set of transactions, a timestamp, a nonce, and a hash. Blocks are linked together using the previous block&apos;s hash so that tampering with an older block invalidates later blocks.</p>
     `,
   },
   {
@@ -76,8 +76,8 @@ export default function Learn() {
             <li>
               <b>Attack:</b> Use the Attack page to:
               <ul className="list-disc list-inside ml-6 mt-1">
-                <li>Experiment with tampering: try to edit a block's data and see how it breaks the chain's validity.</li>
-                <li>Learn why changing a block's data requires re-mining all subsequent blocks to restore validity.</li>
+                <li>Experiment with tampering: try to edit a block&apos;s data and see how it breaks the chain&apos;s validity.</li>
+                <li>Learn why changing a block&apos;s data requires re-mining all subsequent blocks to restore validity.</li>
               </ul>
             </li>
             <li>

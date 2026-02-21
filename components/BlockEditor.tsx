@@ -183,7 +183,7 @@ export default function BlockEditor({ blocks, onBlocksChange, blockValidityMap }
             ⚠️ Block #{editingBlockIndex} has been modified! The blockchain chain is now invalid.
           </p>
           <p className="text-xs text-red-600 mt-1">
-            The block hash no longer matches the proof-of-work requirement. This demonstrates blockchain's tamper detection!
+            The block hash no longer matches the proof-of-work requirement. This demonstrates blockchain&apos;s tamper detection!
           </p>
         </div>
       )}
@@ -191,9 +191,9 @@ export default function BlockEditor({ blocks, onBlocksChange, blockValidityMap }
       <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded text-xs text-blue-800">
         <p className="font-semibold mb-1">💡 Why Editing Breaks the Chain:</p>
         <ol className="list-decimal list-inside space-y-1 text-xs">
-          <li>When you change a transaction amount, the block's hash changes</li>
+          <li>When you change a transaction amount, the block&apos;s hash changes</li>
           <li>The changed hash no longer meets the proof-of-work difficulty requirement</li>
-          <li>The next block's previousHash no longer matches this block's new hash</li>
+          <li>The next block&apos;s previousHash no longer matches this block&apos;s new hash</li>
           <li>The entire chain from this point becomes invalid</li>
           <li>This is why blockchain is tamper-proof!</li>
         </ol>

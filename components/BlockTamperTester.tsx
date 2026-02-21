@@ -77,6 +77,9 @@ export default function BlockTamperTester({ blocks }: BlockTamperTesterProps) {
       <p className="text-sm text-gray-600 mb-4">
         Test how the blockchain detects tampering by attempting to modify transaction amounts.
       </p>
+        <div className="text-xs text-gray-500 mt-2">
+          Tampering with a block&apos;s data will break the chain&apos;s validity. Try to fix it by re-mining!
+        </div>
 
       <div className="space-y-3">
         <div>
@@ -124,7 +127,7 @@ export default function BlockTamperTester({ blocks }: BlockTamperTesterProps) {
                 </span>
               </p>
               <p className="text-xs text-gray-600 pt-2">
-                ✓ This demonstrates blockchain's tamper detection capability!
+                ✓ This demonstrates blockchain&apos;s tamper detection capability!
               </p>
             </div>
           </div>
