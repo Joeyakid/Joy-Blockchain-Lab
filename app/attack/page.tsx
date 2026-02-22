@@ -219,7 +219,7 @@ export default function AttackSimulation() {
                               {editingBlock.hash}
                             </code>
                             <p className="text-xs text-gray-600">
-                              ⚠️ <strong>Hash Mismatch!</strong> The hash no longer matches what's recorded in the blockchain
+                              ⚠️ <strong>Hash Mismatch!</strong> The hash no longer matches what&apos;s recorded in the blockchain
                             </p>
                           </div>
 
@@ -238,7 +238,7 @@ export default function AttackSimulation() {
                                         Block #{blockIdx} is Now Invalid
                                       </p>
                                       <p className="text-xs text-gray-600">
-                                        previousHash doesn't match Block #{blockIdx - 1}'s new hash
+                                        previousHash doesn&apos;t match Block #{blockIdx - 1}&apos;s new hash
                                       </p>
                                     </div>
                                   </div>
@@ -251,7 +251,7 @@ export default function AttackSimulation() {
                           <div className="bg-blue-50 p-4 rounded-lg border border-blue-300">
                             <p className="text-sm font-bold text-blue-900 mb-2">💡 Key Insight</p>
                             <p className="text-sm text-gray-700">
-                              To hide this tampering, someone would need to recalculate the hash of EVERY subsequent block. In a real blockchain with Proof of Work, this becomes exponentially harder because they'd need to redo all the mining work!
+                              To hide this tampering, someone would need to recalculate the hash of every subsequent block. In a real blockchain with Proof of Work, this becomes exponentially harder because they&apos;d need to redo all the mining work.
                             </p>
                           </div>
                         </div>
@@ -263,6 +263,9 @@ export default function AttackSimulation() {
                         <ul className="text-sm text-gray-700 space-y-2">
                           <li>
                             <strong>✓ Immutability:</strong> Changing old blocks is immediately detected
+                          </li>
+                          <li>
+                            <strong>✓ No Silent Attacks:</strong> You can&apos;t secretly modify history
                           </li>
                           <li>
                             <strong>✓ Tamper-Evidence:</strong> The chain visibly breaks, showing the attack

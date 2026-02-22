@@ -29,7 +29,7 @@ export default function BlockVisualization({ block, isValid }: BlockVisualizatio
             isValid ? 'bg-green-500' : 'bg-red-500'
           }`}
         >
-          {isValid ? '✓ Valid' : '✗ Invalid'}
+              {isValid ? '✓ Valid' : '✗ Invalid'}
         </div>
       </div>
 

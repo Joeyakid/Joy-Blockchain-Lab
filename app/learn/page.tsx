@@ -23,7 +23,7 @@ const lessons: Lesson[] = [
     title: 'Mining & Proof-of-Work',
     summary: 'How mining finds a nonce to satisfy difficulty.',
     content: `
-      <p>Miners repeatedly hash a block's contents with different nonces until the resulting hash meets the difficulty target (e.g. starts with a number of zeros). This work makes creating blocks expensive and prevents trivial tampering.</p>
+      <p>Miners repeatedly hash a block&apos;s contents with different nonces until the resulting hash meets the difficulty target (e.g. starts with a number of zeros). This work makes creating blocks expensive and prevents trivial tampering.</p>
     `,
   },
   {
@@ -38,9 +38,9 @@ const lessons: Lesson[] = [
 
 export default function Learn() {
   const [openId, setOpenId] = useState<number | null>(1)
-
   return (
     <div className="min-h-screen bg-gray-50">
+        content: `
       <div className="max-w-4xl mx-auto p-6">
         <h1 className="text-4xl font-bold mb-2 text-gray-800">Learn: Blockchain Fundamentals</h1>
         <p className="text-gray-600 mb-6">Short interactive lessons to explore key concepts used by the simulator.</p>
@@ -50,12 +50,13 @@ export default function Learn() {
           <h2 className="text-2xl font-bold mb-2 text-blue-700">How to Use Joy Blockchain Lab</h2>
           <ol className="list-decimal list-inside space-y-2 text-gray-800">
             <li>
-              <b>Simulator:</b> Go to the Simulator page ("Home"). Here you can:
+              <b>Simulator:</b> Go to the Simulator page (&quot;Home&quot;). Here you can:
               <ul className="list-disc list-inside ml-6 mt-1">
-                <li>Create and submit new transactions (fill sender, receiver, amount, then click "Add Transaction").</li>
-                <li>Mine a new block by clicking "Mine Block". This will bundle pending transactions, find a valid nonce, and add a new block to the chain.</li>
+                <li>Create and submit new transactions (fill sender, receiver, amount, then click &quot;Add Transaction&quot;).</li>
+                <li>Mine a new block by clicking &quot;Mine Block&quot;. This will bundle pending transactions, find a valid nonce, and add a new block to the chain.</li>
                 <li>Adjust mining <b>difficulty</b> to see how it affects mining speed and block hashes.</li>
                 <li>See the blockchain update in real time as you mine and add transactions.</li>
+                <li>Monitor how your actions (mining, adding transactions) affect the chain&apos;s state.</li>
               </ul>
             </li>
             <li>
@@ -63,7 +64,7 @@ export default function Learn() {
               <ul className="list-disc list-inside ml-6 mt-1">
                 <li>Browse all blocks in the chain. Click a block to view its details, transactions, and hashes.</li>
                 <li>See how each block links to the previous one via the <b>previousHash</b> field.</li>
-                <li>Toggle "Raw JSON" to inspect the full data structure of any block.</li>
+                <li>Toggle &quot;Raw JSON&quot; to inspect the full data structure of any block.</li>
               </ul>
             </li>
             <li>

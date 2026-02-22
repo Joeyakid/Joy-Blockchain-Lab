@@ -26,12 +26,12 @@ export default function Explorer() {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">🔍 Blockchain Explorer</h1>
-          <p className="text-gray-600">{"View detailed information about each block, including transactions, hashes, and chain linking"}</p>
+          <p className="text-gray-600">View detailed information about each block, including transactions, hashes, and chain linking</p>
         </div>
 
         {blocks.length === 0 ? (
           <div className="p-8 bg-white rounded-lg shadow-md text-center">
-            <p className="text-gray-500 text-xl">{"No blocks in blockchain yet. Go to the Simulator to mine some blocks!"}</p>
+            <p className="text-gray-500 text-xl">No blocks in blockchain yet. Go to the Simulator to mine some blocks!</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
