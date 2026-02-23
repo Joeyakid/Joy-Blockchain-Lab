@@ -228,3 +228,28 @@ export async function createNewBlock(
 export async function validateBlock(block: Block, previousHash: string | null, difficulty = 2): Promise<boolean> {
   return Blockchain.validateBlock(block, previousHash, difficulty)
 }
+
+/**
+ * Validate entire blockchain and return validation result with list of invalid block indices.
+ */
+export async function validateChain(chain: Block[], difficulty = 2): Promise<{ isValid: boolean; invalidBlocks: number[] }> {
+  return Blockchain.validateChain(chain, difficulty)
+}
+
+/**
+ * Get blockchain statistics (total blocks, transactions, difficulty).
+ */
+export function getBlockchainStats(chain: Block[]): {
+  totalBlocks: number
+  totalTransactions: number
+  difficulty: number
+} {
+  const totalBlocks = chain.length
+  const totalTransactions = chain.reduce((sum, block) => sum + block.transactions.length, 0)
+
+  return {
+    totalBlocks,
+    totalTransactions,
+    difficulty: 2, // Current difficulty
+  }
+}
