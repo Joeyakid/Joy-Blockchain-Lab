@@ -213,7 +213,7 @@ export default function AttackSimulation() {
                           {/* Block Status */}
                           <div className="bg-white p-4 rounded-lg">
                             <p className="text-sm font-semibold text-gray-700 mb-2">
-                              This Block's Hash Changed:
+                              This Block&apos;s Hash Changed:
                             </p>
                             <code className="block bg-gray-900 text-red-400 p-3 rounded text-xs font-mono break-all overflow-auto max-h-24 mb-3">
                               {editingBlock.hash}
@@ -271,7 +271,7 @@ export default function AttackSimulation() {
                             <strong>✓ Tamper-Evidence:</strong> The chain visibly breaks, showing the attack
                           </li>
                           <li>
-                            <strong>✓ No Silent Attacks:</strong> You can't secretly modify history
+                            <strong>✓ No Silent Attacks:</strong> You can&apos;t secretly modify history
                           </li>
                           <li>
                             <strong>✓ Distributed Defense:</strong> In a real network, thousands of nodes would reject this broken chain

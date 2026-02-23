@@ -24,7 +24,7 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <span className="text-2xl">🧬</span>
-            <h1 className="text-xl font-bold">Blockchain Lab</h1>
+            <h1 className="text-xl font-bold">Joy&apos;s Blockchain Lab</h1>
           </div>
 
           {/* Navigation Links */}

@@ -14,25 +14,19 @@ const lessons: Lesson[] = [
     id: 1,
     title: 'Blockchain Basics',
     summary: 'What a block is, chain linking, and immutability.',
-    content: `
-      <p>The blockchain is an append-only chain of blocks. Each block contains a set of transactions, a timestamp, a nonce, and a hash. Blocks are linked together using the previous block&apos;s hash so that tampering with an older block invalidates later blocks.</p>
-    `,
+    content: `<p>The blockchain is an append-only chain of blocks. Each block contains a set of transactions, a timestamp, a nonce, and a hash. Blocks are linked together using the previous block&apos;s hash so that tampering with an older block invalidates later blocks.</p>`,
   },
   {
     id: 2,
     title: 'Mining & Proof-of-Work',
     summary: 'How mining finds a nonce to satisfy difficulty.',
-    content: `
-      <p>Miners repeatedly hash a block&apos;s contents with different nonces until the resulting hash meets the difficulty target (e.g. starts with a number of zeros). This work makes creating blocks expensive and prevents trivial tampering.</p>
-    `,
+    content: `<p>Miners repeatedly hash a block&apos;s contents with different nonces until the resulting hash meets the difficulty target (e.g. starts with a number of zeros). This work makes creating blocks expensive and prevents trivial tampering.</p>`,
   },
   {
     id: 3,
     title: 'Attacks & Tampering',
     summary: 'Common attacks and how the chain resists them.',
-    content: `
-      <p>Changing a block requires re-mining not just that block but every subsequent block. In a distributed network this requires controlling a majority of mining power to present an alternate chain.</p>
-    `,
+    content: `<p>Changing a block requires re-mining not just that block but every subsequent block. In a distributed network this requires controlling a majority of mining power to present an alternate chain.</p>`,
   },
 ]
 
@@ -40,7 +34,6 @@ export default function Learn() {
   const [openId, setOpenId] = useState<number | null>(1)
   return (
     <div className="min-h-screen bg-gray-50">
-        content: `
       <div className="max-w-4xl mx-auto p-6">
         <h1 className="text-4xl font-bold mb-2 text-gray-800">Learn: Blockchain Fundamentals</h1>
         <p className="text-gray-600 mb-6">Short interactive lessons to explore key concepts used by the simulator.</p>
@@ -71,7 +64,7 @@ export default function Learn() {
               <b>Dashboard:</b> Check the Dashboard for:
               <ul className="list-disc list-inside ml-6 mt-1">
                 <li>Statistics about your blockchain: number of blocks, total transactions, current difficulty, and more.</li>
-                <li>Monitor how your actions (mining, adding transactions) affect the chain's state.</li>
+                <li>Monitor how your actions (mining, adding transactions) affect the chain&apos;s state.</li>
               </ul>
             </li>
             <li>

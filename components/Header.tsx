@@ -8,7 +8,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">
-            ⛓️ Interactive Blockchain Simulator
+            ⛓️ Joy&apos;s Interactive Blockchain Simulator
           </h1>
           <p className="text-blue-100 text-lg">
             Learn blockchain technology with mining, transactions, and validation
