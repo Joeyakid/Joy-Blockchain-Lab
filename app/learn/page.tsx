@@ -57,7 +57,6 @@ export default function Learn() {
               <ul className="list-disc list-inside ml-6 mt-1">
                 <li>Browse all blocks in the chain. Click a block to view its details, transactions, and hashes.</li>
                 <li>See how each block links to the previous one via the <b>previousHash</b> field.</li>
-                <li>Toggle &quot;Raw JSON&quot; to inspect the full data structure of any block.</li>
               </ul>
             </li>
             <li>

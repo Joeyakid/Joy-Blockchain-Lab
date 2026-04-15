@@ -6,7 +6,6 @@ import { Block } from '@/types/index'
 export default function Explorer() {
   const [blocks, setBlocks] = useState<Block[]>([])
   const [selectedBlock, setSelectedBlock] = useState<Block | null>(null)
-  // const [showRawJSON, setShowRawJSON] = useState(false)
 
   useEffect(() => {
     try {
@@ -108,17 +107,6 @@ export default function Explorer() {
                     )}
                   </div>
 
-                  {/* <div className="bg-white rounded-lg shadow-md overflow-hidden mt-4">
-                    <button onClick={() => setShowRawJSON(!showRawJSON)} className="w-full px-6 py-4 bg-gray-800 text-white font-semibold hover:bg-gray-900 transition flex items-center justify-between">
-                      {showRawJSON ? '▼' : '▶'} Raw JSON View
-                    </button>
-                    {showRawJSON && (
-                      <div className="p-6 border-t border-gray-200">
-                        <pre className="bg-gray-800 text-green-400 p-4 rounded-lg overflow-auto max-h-96 text-xs font-mono break-words whitespace-pre-wrap">{JSON.stringify(selectedBlock, null, 2)}</pre>
-                        <button onClick={() => { navigator.clipboard.writeText(JSON.stringify(selectedBlock, null, 2)); alert('Block JSON copied to clipboard!') }} className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition text-sm">Copy to Clipboard</button>
-                      </div>
-                    )}
-                  </div> */}
                 </section>
               )}
             </main>
